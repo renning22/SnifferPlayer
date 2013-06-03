@@ -1,0 +1,4 @@
+This source code (excluding dependent libraries) is published under PUBLIC DOMAIN, which means you can do anything to this, but the only thing you need to do is let me know.
+Reach me via github or by e-mail: renning22@gmail.com
+
+Notice that the dependent libraries such as ffmpeg, SDL have their own licences, check them out from their website.
