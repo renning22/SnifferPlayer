@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ffplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libCapGet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sniffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_progresser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_close_button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_play_button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_time_span.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_corner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gesture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streamset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="speaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packetqueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streamplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_next_button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libffmpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="episode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="next_url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="system_tray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="website.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="url.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_center_announcement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="watching_quality_deamon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="userid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="system_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="characterset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version_checker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenui_scale_buttons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\inttypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ffplay.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libCapGet.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sniffer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_progresser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_close_button.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_play_button.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_time_span.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_corner.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gesture.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_panel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stream.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screen.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streamset.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="speaker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetqueue.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streamplay.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_next_button.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libffmpeg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="episode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="next_url.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="system_tray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="website.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="url.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_center_announcement.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="watching_quality_deamon.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reporter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="userid.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="system_info.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="characterset.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version_checker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenui_scale_buttons.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test_code.txt" />
+  </ItemGroup>
+</Project>

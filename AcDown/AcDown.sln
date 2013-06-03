@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "acdownweb", "acdownweb", "{163B2DC5-1B70-43EA-8DF2-2764153CB904}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{AAB36442-C5D7-4580-A18A-62B6EB537F62}|AcDownInterface.dll;{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}|AcDownCore.dll;{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}|AcDownParser.dll;{43875C56-4142-4E71-8CC6-49BFC2C903C1}|AcDownDownloader.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/acdownweb"
+		Debug.AspNetCompiler.PhysicalPath = "acdownweb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\acdownweb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/acdownweb"
+		Release.AspNetCompiler.PhysicalPath = "acdownweb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\acdownweb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59687"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcDownInterface", "AcDownInterface\AcDownInterface.csproj", "{AAB36442-C5D7-4580-A18A-62B6EB537F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcDownCore", "AcDownCore\AcDownCore.csproj", "{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcDownParser", "AcDownParser\AcDownParser.csproj", "{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcDownDownloader", "AcDownDownloader\AcDownDownloader.csproj", "{43875C56-4142-4E71-8CC6-49BFC2C903C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163B2DC5-1B70-43EA-8DF2-2764153CB904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B2DC5-1B70-43EA-8DF2-2764153CB904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163B2DC5-1B70-43EA-8DF2-2764153CB904}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B2DC5-1B70-43EA-8DF2-2764153CB904}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AAB36442-C5D7-4580-A18A-62B6EB537F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB36442-C5D7-4580-A18A-62B6EB537F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB36442-C5D7-4580-A18A-62B6EB537F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB36442-C5D7-4580-A18A-62B6EB537F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43875C56-4142-4E71-8CC6-49BFC2C903C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43875C56-4142-4E71-8CC6-49BFC2C903C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43875C56-4142-4E71-8CC6-49BFC2C903C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43875C56-4142-4E71-8CC6-49BFC2C903C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

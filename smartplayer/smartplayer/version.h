@@ -1,0 +1,12 @@
+#ifndef _VERSION_H_
+#define _VERSION_H_
+
+#define MAIN_VERSION			"0.26.1"
+
+#define FFMPEG_VERSION			"FFMPEG_VERSION"
+#define CC_TYPE					"CC_TYPE"
+#define CC_VERSION				"CC_VERSION"
+#define FFMPEG_CONFIGURATION	"FFMPEG_CONFIGURATION"
+
+
+#endif

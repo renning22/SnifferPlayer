@@ -1,0 +1,88 @@
+
+
+#include <boost/regex.hpp>
+
+void test()
+{
+	std::string str = "/vlive.qqvideo.tc.qq.com/e0011va5u5d.p201.1.mp4?sdtfrom=v10&type=mp4&vkey=FC5";
+
+    boost::smatch what;
+
+	if ( boost::regex_search(str, what, boost::regex("^/.+/\\w{11}\\.")) ) ///.+/w{11}\\..+
+    {
+        std::cout << what.size() << std::endl;
+        for (size_t i = 0; i < what.size(); ++i)
+        {
+            if (what[i].matched)
+                std::cout << what[i] << std::endl;
+        }
+    }
+}
+
+void test()
+{
+	boost::asio::ip::tcp::iostream s;
+
+		// The entire sequence of I/O operations must complete within 5 seconds.
+		// If an expiry occurs, the socket is automatically closed and the stream
+		// becomes bad.
+		s.expires_from_now(boost::posix_time::seconds(5));
+
+		// Establish a connection to the server.
+		s.connect("180.153.93.37", "http");
+		if (!s)
+		{
+			std::cout << "Unable to connect: " << s.error().message() << "\n";
+			return;
+		}
+
+		// Send the request. We specify the "Connection: close" header so that the
+		// server will close the socket after transmitting the response. This will
+		// allow us to treat all data up until the EOF as the content.
+		s << "GET /videos2/tv/20110418/f71288dac55a2f087fb94a33bd0de7f3.f4v?key=4bce7fbabc1dfb94&su=8d0be4c1be66a0ebf1aec415bebdb6a0 HTTP/1.1\r\n";
+		s << "Accept: */*\r\n";
+		s << "Accept-Language: zh-CN\r\n";
+		s << "Referer: http://www.iqiyi.com/player/20120831103146/Player.swf/[[DYNAMIC]]/1\r\n";
+		//s << "x-flash-version: 11,3,300,265\r\n";
+		s << "Accept-Encoding: gzip, deflate\r\n";
+		s << "User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)\r\n";
+		s << "Host: 180.153.93.37\r\n";
+		s << "Connection: Keep-Alive\r\n\r\n";
+
+		//s << "Host: " << our_server << "\r\n";
+		//s << "Accept: */*\r\n";
+		//s << "Connection: close\r\n\r\n";
+
+		// By default, the stream is tied with itself. This means that the stream
+		// automatically flush the buffered output before attempting a read. It is
+		// not necessary not explicitly flush the stream at this point.
+
+		// Check that response is OK.
+		std::string http_version;
+		s >> http_version;
+		std::cout << "version: " << http_version << std::endl;
+		unsigned int status_code;
+		s >> status_code;
+		std::cout << "status_code: " << status_code << std::endl;
+		std::string status_message;
+		std::getline(s, status_message);
+		if (!s || http_version.substr(0, 5) != "HTTP/")
+		{
+			std::cout << "Invalid response\n";
+			return;
+		}
+		if (status_code != 200)
+		{
+			std::cout << "Response returned with status code " << status_code << "\n";
+			//return;
+		}
+
+		// Process the response headers, which are terminated by a blank line.
+		std::string header;
+		while (std::getline(s, header) && header != "\r");
+			std::cout << header << "\n";
+		std::cout << "\n";
+
+		// Write the remaining data to output.
+		std::cout << s.rdbuf() << std::endl;
+}

@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCFD1289-87EC-49DC-BB85-30274BC1F546}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kaedei.AcDown</RootNamespace>
+    <AssemblyName>AcDown</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>Resources\Ac.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\acdownweb\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\UIDelegateContainer.cs" />
+    <Compile Include="Interface\AcPlay\AcPlayConfiguration.cs" />
+    <Compile Include="AcPlay\FlvHelper.cs" />
+    <Compile Include="Core\Config.cs" />
+    <Compile Include="Core\PluginManager.cs" />
+    <Compile Include="Downloader\YouTube\YouTubeDownloader.cs" />
+    <Compile Include="Downloader\YouTube\YouTubePlugin.cs" />
+    <Compile Include="Interface\AutoAnswer.cs" />
+    <Compile Include="Interface\Forms\FormMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Forms\FormMultiSelect.Designer.cs">
+      <DependentUpon>FormMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Forms\FormSingleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Forms\FormSingleSelect.Designer.cs">
+      <DependentUpon>FormSingleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\SerializableDictionary.cs" />
+    <Compile Include="Interface\TaskInfo.cs" />
+    <Compile Include="Core\Updater.cs" />
+    <Compile Include="Downloader\AcFun\Acfun.cs" />
+    <Compile Include="Downloader\Bilibili\Bilibili.cs" />
+    <Compile Include="Downloader\Flvcd\FlvcdDownloader.cs" />
+    <Compile Include="Downloader\Flvcd\FlvcdPlugin.cs" />
+    <Compile Include="Downloader\SfAcg\SfAcgComicDownloader.cs" />
+    <Compile Include="Downloader\SfAcg\SfAcgPlugin.cs" />
+    <Compile Include="Downloader\Tieba\TiebaAlbum.cs" />
+    <Compile Include="Downloader\Tucao\TucaoDownloader.cs" />
+    <Compile Include="Downloader\Tucao\TucaoPlugin.cs" />
+    <Compile Include="Interface\Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Forms\FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Forms\FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Forms\ToolForm.cs" />
+    <Compile Include="Downloader\Imanhua\Imanhua.cs" />
+    <Compile Include="Downloader\Tudou\Tudou.cs" />
+    <Compile Include="Downloader\Youku\Youku.cs" />
+    <Compile Include="Interface\DelegatesContainer.cs" />
+    <Compile Include="Interface\Tools.cs" />
+    <Compile Include="Interface\Update.cs" />
+    <Compile Include="Parser\FlvcdParser.cs" />
+    <Compile Include="UI\Components\AcPlay2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Components\AcPlay2.Designer.cs">
+      <DependentUpon>AcPlay2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Components\AcPlayItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Components\AcPlayItem.Designer.cs">
+      <DependentUpon>AcPlayItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Components\FlvCombineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Components\FlvCombineControl.Designer.cs">
+      <DependentUpon>FlvCombineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Components\PluginSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Components\PluginSettings.Designer.cs">
+      <DependentUpon>PluginSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DwmApi.cs" />
+    <Compile Include="Interface\GlobalSettings.cs" />
+    <Compile Include="Interface\IPlugin.cs" />
+    <Compile Include="Interface\Network.cs" />
+    <Compile Include="Parser\IParser.cs" />
+    <Compile Include="Parser\QQVideoParser.cs" />
+    <Compile Include="Parser\SinaVideoParser.cs" />
+    <Compile Include="Parser\TudouParser.cs" />
+    <Compile Include="Parser\YoukuParser.cs" />
+    <Compile Include="UI\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAddProxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAddProxy.Designer.cs">
+      <DependentUpon>FormAddProxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAutoAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAutoAnswer.Designer.cs">
+      <DependentUpon>FormAutoAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormSingle.Designer.cs">
+      <DependentUpon>FormSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNew.Designer.cs">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormShutdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormShutdown.Designer.cs">
+      <DependentUpon>FormShutdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IDownloader.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interface\Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Forms\FormMultiSelect.resx">
+      <DependentUpon>FormMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Forms\FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Forms\FormSingleSelect.resx">
+      <DependentUpon>FormSingleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Forms\FormWebbrowser.resx">
+      <DependentUpon>FormWebbrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Components\AcPlay2.resx">
+      <DependentUpon>AcPlay2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Components\AcPlayItem.resx">
+      <DependentUpon>AcPlayItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Components\FlvCombineControl.resx">
+      <DependentUpon>FlvCombineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Components\PluginSettings.resx">
+      <DependentUpon>PluginSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAddProxy.resx">
+      <DependentUpon>FormAddProxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAutoAnswer.resx">
+      <DependentUpon>FormAutoAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormNew.resx">
+      <DependentUpon>FormNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormShutdown.resx">
+      <DependentUpon>FormShutdown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\FormSingle.resx">
+      <DependentUpon>FormSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Forms\FormWebbrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Forms\FormWebbrowser.Designer.cs">
+      <DependentUpon>FormWebbrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shutdown.cs" />
+    <Compile Include="Core\TaskManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONICON_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ac.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripOpenFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripOpenWebpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateNoti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Components\FlvCombine\FlvBind.exe" />
+    <EmbeddedResource Include="UI\Components\FlvCombine\FLVLib.dll" />
+    <EmbeddedResource Include="AcPlay\acplay.exe" />
+    <None Include="bin\Debug\AcDown.exe" />
+    <None Include="bin\Debug\AcDown.pdb" />
+    <None Include="bin\Release\AcDown.exe" />
+    <Content Include="ChangeLog.txt" />
+    <None Include="Resources\feedback.png" />
+    <None Include="Resources\remind.wav" />
+    <None Include="Resources\ToolStripControl.png" />
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Downloader\AcDown\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

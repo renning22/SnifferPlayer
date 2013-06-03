@@ -1,0 +1,1 @@
+config:x86:x86_32:generic:mingw32:gcc 4.7.0 (GCC):--enable-memalign-hack --target-os=mingw32 --enable-shared --disable-static --enable-gpl --enable-version3 --enable-pthreads --enable-runtime-cpudetect --enable-avisynth --enable-bzlib --enable-libvo-aacenc --enable-libx264 --enable-zlib

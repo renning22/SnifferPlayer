@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4266B8D4-C67F-4946-9E83-8A8B8E478062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>smartplayer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\ffmpeg-win-dev\include;$(SolutionDir)..\SDL-2-dev\include;$(SolutionDir)..\ffmpeg-win;$(SolutionDir)..\smartplayer\smartplayer\include;$(SolutionDir)..\WpdPack-dev\Include;$(SolutionDir)..\libpng-1.5.12;e:\boost_1_50_0;E:\log4cpp_1_1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\SDL-2-dev\VisualC\SDL\Win32\Debug;$(SolutionDir)..\SDL-2-dev\VisualC\SDLmain\Win32\Debug;$(SolutionDir)..\ffmpeg-win-dev\lib;$(SolutionDir)..\WpdPack-dev\Lib;$(SolutionDir)..\libpng-1.5.12\projects\vstudio\Debug Library;E:\boost_1_50_0\stage\lib;E:\log4cpp_1_1\msvc10\log4cppLIB\Debug;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IntDir>$(SolutionDir)\temp\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>SnifferPlayer</TargetName>
+    <ExtensionsToDeleteOnClean>*.log;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\ffmpeg-win-dev\include;$(SolutionDir)..\SDL-2-dev\include;$(SolutionDir)..\ffmpeg-win;$(SolutionDir)..\smartplayer\smartplayer\include;$(SolutionDir)..\WpdPack-dev\Include;$(SolutionDir)..\libpng-1.5.12;e:\boost_1_50_0;E:\log4cpp_1_1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\SDL-2-dev\VisualC\SDL\Win32\Release;$(SolutionDir)..\SDL-2-dev\VisualC\SDLmain\Win32\Release;$(SolutionDir)..\ffmpeg-win-dev\lib;$(SolutionDir)..\WpdPack-dev\Lib;$(SolutionDir)..\libpng-1.5.12\projects\vstudio\Release Library;E:\boost_1_50_0\stage\lib;E:\log4cpp_1_1\msvc10\log4cppLIB\Release;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IntDir>$(SolutionDir)\temp\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>SnifferPlayer</TargetName>
+    <ExtensionsToDeleteOnClean>*.log;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_SCL_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;swresample.lib;swscale.lib;SDL.lib;SDLmain.lib;winmm.lib;imm32.lib;version.lib;ole32.lib;oleaut32.lib;Shell32.lib;User32.lib;Gdi32.lib;Packet.lib;wpcap.lib;log4cppD.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_SCL_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;swresample.lib;swscale.lib;SDL.lib;SDLmain.lib;winmm.lib;imm32.lib;version.lib;ole32.lib;oleaut32.lib;Shell32.lib;User32.lib;Gdi32.lib;Packet.lib;wpcap.lib;log4cppLIB.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="episode.cpp" />
+    <ClCompile Include="ffplay.cpp" />
+    <ClCompile Include="gesture.cpp" />
+    <ClCompile Include="http.cpp" />
+    <ClCompile Include="libCapGet.cpp" />
+    <ClCompile Include="libffmpeg.cpp" />
+    <ClCompile Include="libpng.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="next_url.cpp" />
+    <ClCompile Include="packetqueue.cpp" />
+    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="reporter.cpp" />
+    <ClCompile Include="screen.cpp" />
+    <ClCompile Include="screenui_center_announcement.cpp" />
+    <ClCompile Include="screenui_corner.cpp" />
+    <ClCompile Include="screenui_next_button.cpp" />
+    <ClCompile Include="screenui_panel.cpp" />
+    <ClCompile Include="screenui_play_button.cpp" />
+    <ClCompile Include="screenui.cpp" />
+    <ClCompile Include="screenui_progresser.cpp" />
+    <ClCompile Include="screenui_close_button.cpp" />
+    <ClCompile Include="screenui_scale_buttons.cpp" />
+    <ClCompile Include="screenui_time_span.cpp" />
+    <ClCompile Include="sniffer.cpp" />
+    <ClCompile Include="speaker.cpp" />
+    <ClCompile Include="stream.cpp" />
+    <ClCompile Include="streamplay.cpp" />
+    <ClCompile Include="streamset.cpp" />
+    <ClCompile Include="system_info.cpp" />
+    <ClCompile Include="system_tray.cpp" />
+    <ClCompile Include="url.cpp" />
+    <ClCompile Include="userid.cpp" />
+    <ClCompile Include="version_checker.cpp" />
+    <ClCompile Include="watching_quality_deamon.cpp" />
+    <ClCompile Include="website.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="characterset.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="engine.h" />
+    <ClInclude Include="episode.h" />
+    <ClInclude Include="gesture.h" />
+    <ClInclude Include="http.h" />
+    <ClInclude Include="include\inttypes.h" />
+    <ClInclude Include="ffplay.h" />
+    <ClInclude Include="libCapGet.h" />
+    <ClInclude Include="libffmpeg.h" />
+    <ClInclude Include="libpng.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="next_url.h" />
+    <ClInclude Include="packetqueue.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="reporter.h" />
+    <ClInclude Include="screen.h" />
+    <ClInclude Include="screenui_center_announcement.h" />
+    <ClInclude Include="screenui_corner.h" />
+    <ClInclude Include="screenui_next_button.h" />
+    <ClInclude Include="screenui_panel.h" />
+    <ClInclude Include="screenui_play_button.h" />
+    <ClInclude Include="screenui.h" />
+    <ClInclude Include="screenui_close_button.h" />
+    <ClInclude Include="screenui_progresser.h" />
+    <ClInclude Include="screenui_scale_buttons.h" />
+    <ClInclude Include="screenui_time_span.h" />
+    <ClInclude Include="sniffer.h" />
+    <ClInclude Include="speaker.h" />
+    <ClInclude Include="stream.h" />
+    <ClInclude Include="streamplay.h" />
+    <ClInclude Include="streamset.h" />
+    <ClInclude Include="system_info.h" />
+    <ClInclude Include="system_tray.h" />
+    <ClInclude Include="url.h" />
+    <ClInclude Include="userid.h" />
+    <ClInclude Include="utility.hpp" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="version_checker.h" />
+    <ClInclude Include="watching_quality_deamon.h" />
+    <ClInclude Include="website.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test_code.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
